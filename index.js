@@ -29,7 +29,7 @@ async function start(){
     const sma21 = calcSMA(data);
     const sma13 = calcSMA(data.slice(8));
     console.log("SMA (21): " + sma21);
-    console.log("SMA (11): " + sma13);
+    console.log("SMA (13): " + sma13);
     console.log("Is Opened? " + isOpened);
 
     if (sma13 > sma21 && isOpened === false) {
